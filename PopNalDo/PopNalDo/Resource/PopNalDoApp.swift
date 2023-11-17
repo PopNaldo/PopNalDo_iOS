@@ -11,7 +11,7 @@ import SwiftUI
 struct PopNalDoApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(state: MainState())
         }
     }
 }

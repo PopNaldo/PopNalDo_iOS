@@ -1,5 +1,5 @@
 //
-//  MainView.swift
+//  MordalView.swift
 //  PopNalDo
 //
 //  Created by dgsw8th16 on 10/20/23.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct MordalView: View {
     var body: some View {
-        Text("Hello, BongSeong!")
+        Text(" ")
     }
 }
 
 #Preview {
-    MainView()
+    MordalView()
 }

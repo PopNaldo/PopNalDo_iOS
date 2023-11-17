@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42E1C6322AE24E2300FF84EA /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1C6312AE24E2300FF84EA /* MainModel.swift */; };
+		42E1C6342AE24E2900FF84EA /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1C6332AE24E2900FF84EA /* MainState.swift */; };
 		754FEA222AE248650099D79D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FEA212AE248650099D79D /* MainView.swift */; };
 		754FEA242AE249020099D79D /* MordalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754FEA232AE249020099D79D /* MordalView.swift */; };
 		8598B8532AE244D1005D52D9 /* PopNalDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598B8522AE244D1005D52D9 /* PopNalDoApp.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42E1C6312AE24E2300FF84EA /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		42E1C6332AE24E2900FF84EA /* MainState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
 		754FEA212AE248650099D79D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		754FEA232AE249020099D79D /* MordalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MordalView.swift; sourceTree = "<group>"; };
 		8598B84F2AE244D1005D52D9 /* PopNalDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopNalDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,27 +38,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		754FEA252AE249550099D79D /* VIew */ = {
+		42E1C62F2AE24E0D00FF84EA /* State */ = {
 			isa = PBXGroup;
 			children = (
-				754FEA212AE248650099D79D /* MainView.swift */,
-				754FEA232AE249020099D79D /* MordalView.swift */,
-			);
-			path = VIew;
-			sourceTree = "<group>";
-		};
-		754FEA262AE24A860099D79D /* State */ = {
-			isa = PBXGroup;
-			children = (
+				42E1C6332AE24E2900FF84EA /* MainState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
 		};
-		754FEA272AE24A9E0099D79D /* Model */ = {
+		42E1C6302AE24E1700FF84EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42E1C6312AE24E2300FF84EA /* MainModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		42E1C6352AE24E3500FF84EA /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8598B8522AE244D1005D52D9 /* PopNalDoApp.swift */,
+				8598B8562AE244D2005D52D9 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		42E1C6362AE24E4300FF84EA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				42E1C6302AE24E1700FF84EA /* Model */,
+				42E1C62F2AE24E0D00FF84EA /* State */,
+				754FEA252AE249550099D79D /* VIew */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		754FEA252AE249550099D79D /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				754FEA232AE249020099D79D /* MordalView.swift */,
+				754FEA212AE248650099D79D /* MainView.swift */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 		8598B8462AE244D1005D52D9 = {
@@ -76,11 +101,8 @@
 		8598B8512AE244D1005D52D9 /* PopNalDo */ = {
 			isa = PBXGroup;
 			children = (
-				8598B8522AE244D1005D52D9 /* PopNalDoApp.swift */,
-				754FEA272AE24A9E0099D79D /* Model */,
-				754FEA262AE24A860099D79D /* State */,
-				754FEA252AE249550099D79D /* VIew */,
-				8598B8562AE244D2005D52D9 /* Assets.xcassets */,
+				42E1C6362AE24E4300FF84EA /* Source */,
+				42E1C6352AE24E3500FF84EA /* Resource */,
 				8598B8582AE244D2005D52D9 /* Preview Content */,
 			);
 			path = PopNalDo;
@@ -164,6 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E1C6322AE24E2300FF84EA /* MainModel.swift in Sources */,
+				42E1C6342AE24E2900FF84EA /* MainState.swift in Sources */,
 				754FEA222AE248650099D79D /* MainView.swift in Sources */,
 				8598B8532AE244D1005D52D9 /* PopNalDoApp.swift in Sources */,
 				754FEA242AE249020099D79D /* MordalView.swift in Sources */,
